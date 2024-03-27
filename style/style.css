@@ -47,8 +47,9 @@ span {
     top: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    margin-top: 160px;
     justify-content: center;
+    left: 50%;
+    top : 61%;
   }
   
   .center {
