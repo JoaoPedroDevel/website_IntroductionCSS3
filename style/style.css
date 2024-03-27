@@ -36,27 +36,24 @@ p {
 span {
     font-weight: bold;
 }
-
-
-
 .container {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    left: 50%;
-    top : 61%;
-  }
-  
-  .center {
-    width: 180px;
-    height: 60px;
-    position: absolute;
-  }
+  width: 400px;
+  height: 400px;
+  position: absolute; /* Alterado para relativo */
+  display: flex;
+  justify-content: center;
+  margin-top: 10%; /* Adicionado para centralizar horizontalmente */
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  left: 55%;
+  top: 22%; /* Mudado para 100% para posicionar abaixo da div .container */
+  transform: translateX(-50%); /* Adicionado para centralizar horizontalmente */
+}
+
   
   .btn {
     font-family: "Verdana";
@@ -116,6 +113,8 @@ html {
   border: 3px black ;
   background-color: #0e0b0b;
 }
-@media (max-width: 768px) {
-  /* Estilos para telas menores que 768px de largura */
+@media (max-width: 360px) {
+  /* Estilos para telas menores que 360px de largura */
+}
+@media  (max-height: 780){
 }
